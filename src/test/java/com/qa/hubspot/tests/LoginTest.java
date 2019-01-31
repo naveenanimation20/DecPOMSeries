@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.qa.hubspot.base.BasePage;
+import com.qa.hubspot.constants.Constants;
 import com.qa.hubspot.pages.LoginPage;
 
 public class LoginTest {
@@ -33,7 +34,7 @@ public class LoginTest {
 	public void loginPageTitleTest(){
 		String title = loginPage.getLoginPageTitle();
 		System.out.println("login page title is: "+ title);
-		Assert.assertEquals(title, "HubSpot Login", "login page title is not matched");
+		Assert.assertEquals(title, Constants.LOGIN_PAGE_TITLE, "login page title is not matched");
 	}
 	
 	@Test(priority=2)

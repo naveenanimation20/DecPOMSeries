@@ -50,6 +50,9 @@ public class LoginTest {
 	@Test
 	public void testPassword(){
 		System.out.println("test password");
+		System.out.println("test password");
+		System.out.println("test password");
+
 	}
 	
 	@AfterMethod

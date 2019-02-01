@@ -24,14 +24,13 @@ public class LoginPage extends BasePage{
 	
 	
 	//2. create a constructor of page class and initialize page elements
-	public LoginPage(WebDriver driver){
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
+	public LoginPage(){
+		PageFactory.initElements(getDriver(), this);
 	}
 	
 	//3. Methods/Actions of page:
 	public String getLoginPageTitle(){
-		return driver.getTitle();
+		return getDriver().getTitle();
 	}
 	
 	public boolean verifyForgotPassowrdLink(){
@@ -43,7 +42,7 @@ public class LoginPage extends BasePage{
 		password.sendKeys(pwd);
 		loginBtn.click();
 		
-		return new HomePage(driver);
+		return new HomePage();
 	}
 	
 }

@@ -30,7 +30,7 @@ public class HomePageTest {
 		String browser = prop.getProperty("browser");
 		driver = basePage.init_driver(browser);
 		driver.get(prop.getProperty("url"));
-		loginPage = new LoginPage(driver);
+		loginPage = new LoginPage();
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	

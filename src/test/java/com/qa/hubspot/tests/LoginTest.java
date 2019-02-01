@@ -27,7 +27,7 @@ public class LoginTest {
 		String browser = prop.getProperty("browser");
 		driver = basePage.init_driver(browser);
 		driver.get(prop.getProperty("url"));
-		loginPage = new LoginPage(driver);
+		loginPage = new LoginPage();
 	}
 	
 	@Test(priority=1)
@@ -47,7 +47,10 @@ public class LoginTest {
 		loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
-	
+	@Test
+	public void testPassword(){
+		System.out.println("test password");
+	}
 	
 	@AfterMethod
 	public void tearDown(){

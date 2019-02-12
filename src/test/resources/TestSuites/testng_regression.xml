@@ -5,7 +5,7 @@
 		<listener class-name="com.qa.hubspot.listeners.ExtentReportListener" />
 	</listeners>
 
-	<test name="hub spot regression Test">
+	<test name="hub spot regression Test" thread-count="3" parallel="methods">
 		<classes>
 			<class name="com.qa.hubspot.tests.LoginTest" />
 			<class name="com.qa.hubspot.tests.HomePageTest" />

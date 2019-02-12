@@ -13,15 +13,14 @@ import com.qa.hubspot.constants.Constants;
 import com.qa.hubspot.pages.LoginPage;
 
 public class LoginTest {
-	
+
 	public BasePage basePage;
 	public WebDriver driver;
 	public Properties prop;
 	public LoginPage loginPage;
-	
-	
+
 	@BeforeMethod
-	public void setUp(){
+	public void setUp() {
 		basePage = new BasePage();
 		prop = basePage.init_properties();
 		String browser = prop.getProperty("browser");
@@ -29,40 +28,36 @@ public class LoginTest {
 		driver.get(prop.getProperty("url"));
 		loginPage = new LoginPage();
 	}
-	
-	@Test(priority=1)
-	public void loginPageTitleTest(){
+
+	@Test(priority = 1)
+	public void loginPageTitleTest() {
 		String title = loginPage.getLoginPageTitle();
-		System.out.println("login page title is: "+ title);
+		System.out.println("login page title is: " + title);
 		Assert.assertEquals(title, Constants.LOGIN_PAGE_TITLE, "login page title is not matched");
 	}
-	
-	@Test(priority=2)
-	public void forgotPwdLinkTest(){
-	Assert.assertTrue(loginPage.verifyForgotPassowrdLink(), "forgor pwd link is not displayed");
+
+	@Test(priority = 2)
+	public void forgotPwdLinkTest() {
+		Assert.assertTrue(loginPage.verifyForgotPassowrdLink(), "forgor pwd link is not displayed");
 	}
-	
-	@Test(priority=3)
-	public void login_CorrectData_Test(){
+
+	@Test(priority = 3)
+	public void login_CorrectData_Test() {
 		loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-	}
-	
-	@Test
-	public void testPassword(){
-		System.out.println("test password");
-		System.out.println("test password");
-		System.out.println("test password");
+		Assert.assertTrue(true);
 
 	}
-	
-	@AfterMethod
-	public void tearDown(){
+
+	@Test
+	public void login_IncorrectData() {
+		loginPage.login("test@gmail.com", "test123");
+		Assert.assertTrue(false);
+
+	}
+
+	@AfterMethod(alwaysRun = true)
+	public void tearDown() {
 		driver.quit();
 	}
-	
-	
-	
-	
-	
 
 }

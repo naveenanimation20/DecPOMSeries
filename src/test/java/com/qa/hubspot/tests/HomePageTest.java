@@ -38,7 +38,7 @@ public class HomePageTest {
 	public void verifyHomePageTitleTest(){
 		String title = homePage.getHomePageTitle();
 		System.out.println("home page title is: "+ title);
-		Assert.assertEquals(title, Constants.HOME_PAGE_HEADER);
+		Assert.assertEquals(title, Constants.HOME_PAGE_TITLE);
 	}
 	
 	@Test
@@ -48,7 +48,7 @@ public class HomePageTest {
 	
 	
 	
-	@AfterMethod
+	@AfterMethod(alwaysRun=true)
 	public void tearDown(){
 		driver.quit();
 	}

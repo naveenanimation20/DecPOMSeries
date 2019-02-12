@@ -28,11 +28,13 @@ public class HomePage extends BasePage{
 	
 	public String getHomePageTitle(){
 		WebDriverWait wait = new WebDriverWait(getDriver(), 20);
-		wait.until(ExpectedConditions.titleContains(Constants.HOME_PAGE_HEADER));
+		wait.until(ExpectedConditions.titleContains(Constants.HOME_PAGE_TITLE));
 		return getDriver().getTitle();
 	}
 	
 	public boolean verifyHomePageHeader(){
+		WebDriverWait wait = new WebDriverWait(getDriver(), 20);
+		wait.until(ExpectedConditions.visibilityOf(homePageHeader));
 		return homePageHeader.isDisplayed();
 	}
 	

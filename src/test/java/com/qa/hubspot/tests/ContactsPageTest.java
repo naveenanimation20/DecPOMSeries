@@ -41,7 +41,7 @@ public class ContactsPageTest {
 	
 	
 	
-	@AfterMethod
+	@AfterMethod(alwaysRun=true)
 	public void tearDown(){
 		driver.quit();
 	}

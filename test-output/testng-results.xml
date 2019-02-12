@@ -1,70 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+<testng-results skipped="0" failed="1" ignored="0" total="7" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Hub Spot Test Suite" duration-ms="77819" started-at="2019-02-12T03:03:40Z" finished-at="2019-02-12T03:04:57Z">
+  <suite name="Hub Spot Test Suite" duration-ms="45491" started-at="2019-02-12T16:07:05Z" finished-at="2019-02-12T16:07:50Z">
     <groups>
     </groups>
-    <test name="hub spot regression Test" duration-ms="77819" started-at="2019-02-12T03:03:40Z" finished-at="2019-02-12T03:04:57Z">
+    <test name="hub spot regression Test" duration-ms="45491" started-at="2019-02-12T16:07:05Z" finished-at="2019-02-12T16:07:50Z">
       <class name="com.qa.hubspot.tests.ContactsPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.ContactsPageTest@51c8530f]" name="setUp" is-config="true" duration-ms="24816" started-at="2019-02-12T03:04:18Z" finished-at="2019-02-12T03:04:42Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.ContactsPageTest@7403c468]" name="setUp" is-config="true" duration-ms="18327" started-at="2019-02-12T16:07:12Z" finished-at="2019-02-12T16:07:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="createContactsTest()[pri:0, instance:com.qa.hubspot.tests.ContactsPageTest@51c8530f]" name="createContactsTest" duration-ms="14023" started-at="2019-02-12T03:04:42Z" finished-at="2019-02-12T03:04:56Z">
+        <test-method status="PASS" signature="createContactsTest()[pri:0, instance:com.qa.hubspot.tests.ContactsPageTest@7403c468]" name="createContactsTest" duration-ms="8434" started-at="2019-02-12T16:07:30Z" finished-at="2019-02-12T16:07:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createContactsTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.ContactsPageTest@51c8530f]" name="tearDown" is-config="true" duration-ms="1011" started-at="2019-02-12T03:04:56Z" finished-at="2019-02-12T03:04:57Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.ContactsPageTest@7403c468]" name="tearDown" is-config="true" duration-ms="108" started-at="2019-02-12T16:07:39Z" finished-at="2019-02-12T16:07:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.hubspot.tests.ContactsPageTest -->
       <class name="com.qa.hubspot.tests.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@13eb8acf]" name="setUp" is-config="true" duration-ms="9368" started-at="2019-02-12T03:03:50Z" finished-at="2019-02-12T03:03:59Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@51c8530f]" name="setUp" is-config="true" duration-ms="6680" started-at="2019-02-12T16:07:05Z" finished-at="2019-02-12T16:07:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="verifyHomePageHeaderTest()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@13eb8acf]" name="verifyHomePageHeaderTest" duration-ms="251" started-at="2019-02-12T03:03:59Z" finished-at="2019-02-12T03:03:59Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@51c8530f]" name="setUp" is-config="true" duration-ms="12425" started-at="2019-02-12T16:07:05Z" finished-at="2019-02-12T16:07:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@51c8530f]" name="verifyHomePageTitleTest" duration-ms="4596" started-at="2019-02-12T16:07:11Z" finished-at="2019-02-12T16:07:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@51c8530f]" name="tearDown" is-config="true" duration-ms="92" started-at="2019-02-12T16:07:16Z" finished-at="2019-02-12T16:07:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="verifyHomePageHeaderTest()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@51c8530f]" name="verifyHomePageHeaderTest" duration-ms="10351" started-at="2019-02-12T16:07:17Z" finished-at="2019-02-12T16:07:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageHeaderTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@51c8530f]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-02-12T16:07:27Z" finished-at="2019-02-12T16:07:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.hubspot.tests.HomePageTest -->
+      <class name="com.qa.hubspot.tests.LoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.LoginTest@13eb8acf]" name="setUp" is-config="true" duration-ms="5251" started-at="2019-02-12T16:07:05Z" finished-at="2019-02-12T16:07:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="login_IncorrectData()[pri:0, instance:com.qa.hubspot.tests.LoginTest@13eb8acf]" name="login_IncorrectData" duration-ms="1362" started-at="2019-02-12T16:07:10Z" finished-at="2019-02-12T16:07:11Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Unable to locate element: //h1[text()='Sales Dashboard']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Naveen-Mac.local', ip: 'fe80:0:0:0:184c:fe11:a46c:b11c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_144'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 4567, moz:profile: /var/folders/fd/lw5s91x96f9..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1d576516-cb6c-0542-80c5-6f8657d873dc
-*** Element info: {Using=xpath, value=//h1[text()='Sales Dashboard']}]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //h1[text()='Sales Dashboard']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Naveen-Mac.local', ip: 'fe80:0:0:0:184c:fe11:a46c:b11c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_144'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 4567, moz:profile: /var/folders/fd/lw5s91x96f9..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1d576516-cb6c-0542-80c5-6f8657d873dc
-*** Element info: {Using=xpath, value=//h1[text()='Sales Dashboard']}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
-at com.qa.hubspot.pages.HomePage.verifyHomePageHeader(HomePage.java:36)
-at com.qa.hubspot.tests.HomePageTest.verifyHomePageHeaderTest(HomePageTest.java:46)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at com.qa.hubspot.tests.LoginTest.login_IncorrectData(LoginTest.java:54)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -75,54 +73,52 @@ at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHomePageHeaderTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@13eb8acf]" name="tearDown" is-config="true" duration-ms="1261" started-at="2019-02-12T03:04:01Z" finished-at="2019-02-12T03:04:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@13eb8acf]" name="setUp" is-config="true" duration-ms="8896" started-at="2019-02-12T03:04:02Z" finished-at="2019-02-12T03:04:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@13eb8acf]" name="verifyHomePageTitleTest" duration-ms="5058" started-at="2019-02-12T03:04:11Z" finished-at="2019-02-12T03:04:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyHomePageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@13eb8acf]" name="tearDown" is-config="true" duration-ms="1414" started-at="2019-02-12T03:04:16Z" finished-at="2019-02-12T03:04:18Z">
+        </test-method> <!-- login_IncorrectData -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginTest@13eb8acf]" name="tearDown" is-config="true" duration-ms="124" started-at="2019-02-12T16:07:12Z" finished-at="2019-02-12T16:07:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.hubspot.tests.HomePageTest -->
-      <class name="com.qa.hubspot.tests.LoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.LoginTest@543c6f6d]" name="setUp" is-config="true" duration-ms="8907" started-at="2019-02-12T03:03:40Z" finished-at="2019-02-12T03:03:48Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.LoginTest@13eb8acf]" name="setUp" is-config="true" duration-ms="3342" started-at="2019-02-12T16:07:39Z" finished-at="2019-02-12T16:07:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testPassword()[pri:0, instance:com.qa.hubspot.tests.LoginTest@543c6f6d]" name="testPassword" duration-ms="33" started-at="2019-02-12T03:03:48Z" finished-at="2019-02-12T03:03:49Z">
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.qa.hubspot.tests.LoginTest@13eb8acf]" name="loginPageTitleTest" duration-ms="5" started-at="2019-02-12T16:07:42Z" finished-at="2019-02-12T16:07:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPassword -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginTest@543c6f6d]" name="tearDown" is-config="true" duration-ms="1033" started-at="2019-02-12T03:03:49Z" finished-at="2019-02-12T03:03:50Z">
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginTest@13eb8acf]" name="tearDown" is-config="true" duration-ms="88" started-at="2019-02-12T16:07:42Z" finished-at="2019-02-12T16:07:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.LoginTest@13eb8acf]" name="setUp" is-config="true" duration-ms="3580" started-at="2019-02-12T16:07:42Z" finished-at="2019-02-12T16:07:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="forgotPwdLinkTest()[pri:2, instance:com.qa.hubspot.tests.LoginTest@13eb8acf]" name="forgotPwdLinkTest" duration-ms="25" started-at="2019-02-12T16:07:46Z" finished-at="2019-02-12T16:07:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotPwdLinkTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginTest@13eb8acf]" name="tearDown" is-config="true" duration-ms="88" started-at="2019-02-12T16:07:46Z" finished-at="2019-02-12T16:07:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.LoginTest@13eb8acf]" name="setUp" is-config="true" duration-ms="3808" started-at="2019-02-12T16:07:46Z" finished-at="2019-02-12T16:07:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="login_CorrectData_Test()[pri:3, instance:com.qa.hubspot.tests.LoginTest@13eb8acf]" name="login_CorrectData_Test" duration-ms="379" started-at="2019-02-12T16:07:50Z" finished-at="2019-02-12T16:07:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_CorrectData_Test -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginTest@13eb8acf]" name="tearDown" is-config="true" duration-ms="88" started-at="2019-02-12T16:07:50Z" finished-at="2019-02-12T16:07:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

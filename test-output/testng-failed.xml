@@ -4,15 +4,15 @@
   <listeners>
     <listener class-name="com.qa.hubspot.listeners.ExtentReportListener"/>
   </listeners>
-  <test thread-count="5" name="hub spot regression Test(failed)">
+  <test thread-count="5" name="hub spot regression Test(failed)" parallel="methods">
     <classes>
-      <class name="com.qa.hubspot.tests.HomePageTest">
+      <class name="com.qa.hubspot.tests.LoginTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="verifyHomePageHeaderTest"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="login_IncorrectData"/>
         </methods>
-      </class> <!-- com.qa.hubspot.tests.HomePageTest -->
+      </class> <!-- com.qa.hubspot.tests.LoginTest -->
     </classes>
   </test> <!-- hub spot regression Test(failed) -->
 </suite> <!-- Failed suite [Hub Spot Test Suite] -->

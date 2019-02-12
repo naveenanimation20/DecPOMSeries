@@ -86,7 +86,6 @@ public class BasePage {
 		return prop;
 	}
 	
-	
 	public String getScreenshot() {
 		File src = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.FILE);
 		String path = System.getProperty("user.dir") + "/screenshots/" + System.currentTimeMillis() + ".png";

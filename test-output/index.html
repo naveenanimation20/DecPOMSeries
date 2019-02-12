@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Hub_Spot_Test_Suite">
-                    <span>testng.xml</span>
+                    <span>testng_regression.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Hub_Spot_Test_Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Hub_Spot_Test_Suite" title="com.qa.hubspot.tests.HomePageTest" hash-for-method="verifyHomePageHeaderTest">verifyHomePageHeaderTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Hub_Spot_Test_Suite" title="com.qa.hubspot.tests.LoginTest" hash-for-method="login_IncorrectData">login_IncorrectData</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Hub_Spot_Test_Suite -->
@@ -121,7 +121,22 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Hub_Spot_Test_Suite" title="com.qa.hubspot.tests.LoginTest" hash-for-method="testPassword">testPassword</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Hub_Spot_Test_Suite" title="com.qa.hubspot.tests.LoginTest" hash-for-method="forgotPwdLinkTest">forgotPwdLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hub_Spot_Test_Suite" title="com.qa.hubspot.tests.LoginTest" hash-for-method="loginPageTitleTest">loginPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hub_Spot_Test_Suite" title="com.qa.hubspot.tests.LoginTest" hash-for-method="login_CorrectData_Test">login_CorrectData_Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hub_Spot_Test_Suite" title="com.qa.hubspot.tests.HomePageTest" hash-for-method="verifyHomePageHeaderTest">verifyHomePageHeaderTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -144,6 +159,28 @@
           <div class="suite-Hub_Spot_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
+              <span class="class-name">com.qa.hubspot.tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="login_IncorrectData">
+                  </a> <!-- login_IncorrectData -->
+                  <span class="method-name">login_IncorrectData</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.qa.hubspot.tests.LoginTest.login_IncorrectData(LoginTest.java:54)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hub_Spot_Test_Suite-class-failed -->
+          <div class="suite-Hub_Spot_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">com.qa.hubspot.tests.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -152,35 +189,17 @@
                   <a name="verifyHomePageHeaderTest">
                   </a> <!-- verifyHomePageHeaderTest -->
                   <span class="method-name">verifyHomePageHeaderTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //h1[text()=&apos;Sales Dashboard&apos;]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Naveen-Mac.local&apos;, ip: &apos;fe80:0:0:0:184c:fe11:a46c:b11c%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.4&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 4567, moz:profile: /var/folders/fd/lw5s91x96f9..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1d576516-cb6c-0542-80c5-6f8657d873dc
-*** Element info: {Using=xpath, value=//h1[text()=&apos;Sales Dashboard&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
-	at com.qa.hubspot.pages.HomePage.verifyHomePageHeader(HomePage.java:36)
-	at com.qa.hubspot.tests.HomePageTest.verifyHomePageHeaderTest(HomePageTest.java:46)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHomePageTitleTest">
+                  </a> <!-- verifyHomePageTitleTest -->
+                  <span class="method-name">verifyHomePageTitleTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Hub_Spot_Test_Suite-class-failed -->
+          </div> <!-- suite-Hub_Spot_Test_Suite-class-passed -->
           <div class="suite-Hub_Spot_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -204,24 +223,23 @@ Session ID: 1d576516-cb6c-0542-80c5-6f8657d873dc
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testPassword">
-                  </a> <!-- testPassword -->
-                  <span class="method-name">testPassword</span>
+                  <a name="forgotPwdLinkTest">
+                  </a> <!-- forgotPwdLinkTest -->
+                  <span class="method-name">forgotPwdLinkTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Hub_Spot_Test_Suite-class-passed -->
-          <div class="suite-Hub_Spot_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.qa.hubspot.tests.HomePageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyHomePageTitleTest">
-                  </a> <!-- verifyHomePageTitleTest -->
-                  <span class="method-name">verifyHomePageTitleTest</span>
+                  <a name="loginPageTitleTest">
+                  </a> <!-- loginPageTitleTest -->
+                  <span class="method-name">loginPageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login_CorrectData_Test">
+                  </a> <!-- login_CorrectData_Test -->
+                  <span class="method-name">login_CorrectData_Test</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -229,7 +247,7 @@ Session ID: 1d576516-cb6c-0542-80c5-6f8657d873dc
         </div> <!-- panel Hub_Spot_Test_Suite -->
         <div panel-name="test-xml-Hub_Spot_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/NaveenKhunteta/Documents/workspace/DecPOMSeries/src/test/resources/TestSuites/testng.xml</span>
+            <span class="header-content">/Users/NaveenKhunteta/Documents/workspace/DecPOMSeries/src/test/resources/TestSuites/testng_regression.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -239,7 +257,7 @@ Session ID: 1d576516-cb6c-0542-80c5-6f8657d873dc
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.qa.hubspot.listeners.ExtentReportListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;hub spot regression Test&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; name=&quot;hub spot regression Test&quot; parallel=&quot;methods&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.qa.hubspot.tests.LoginTest&quot;/&gt;
       &lt;class name=&quot;com.qa.hubspot.tests.HomePageTest&quot;/&gt;
@@ -283,28 +301,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'createContactsTest')
-data.setCell(0, 2, 'com.qa.hubspot.tests.ContactsPageTest')
-data.setCell(0, 3, 14023);
+data.setCell(0, 1, 'verifyHomePageHeaderTest')
+data.setCell(0, 2, 'com.qa.hubspot.tests.HomePageTest')
+data.setCell(0, 3, 10351);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyHomePageTitleTest')
-data.setCell(1, 2, 'com.qa.hubspot.tests.HomePageTest')
-data.setCell(1, 3, 5058);
+data.setCell(1, 1, 'createContactsTest')
+data.setCell(1, 2, 'com.qa.hubspot.tests.ContactsPageTest')
+data.setCell(1, 3, 8434);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyHomePageHeaderTest')
+data.setCell(2, 1, 'verifyHomePageTitleTest')
 data.setCell(2, 2, 'com.qa.hubspot.tests.HomePageTest')
-data.setCell(2, 3, 251);
+data.setCell(2, 3, 4596);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testPassword')
+data.setCell(3, 1, 'login_IncorrectData')
 data.setCell(3, 2, 'com.qa.hubspot.tests.LoginTest')
-data.setCell(3, 3, 33);
+data.setCell(3, 3, 1362);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'login_CorrectData_Test')
+data.setCell(4, 2, 'com.qa.hubspot.tests.LoginTest')
+data.setCell(4, 3, 379);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'forgotPwdLinkTest')
+data.setCell(5, 2, 'com.qa.hubspot.tests.LoginTest')
+data.setCell(5, 3, 25);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'loginPageTitleTest')
+data.setCell(6, 2, 'com.qa.hubspot.tests.LoginTest')
+data.setCell(6, 3, 5);
 window.suiteTableData['Hub_Spot_Test_Suite']= { tableData: data, tableDiv: 'times-div-Hub_Spot_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 25 seconds</span>
               <div id="times-div-Hub_Spot_Test_Suite">
               </div> <!-- times-div-Hub_Spot_Test_Suite -->
             </div> <!-- times-div -->
@@ -335,57 +365,111 @@ return data;
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testPassword</span>
-                <span class="method-start">8908 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">8952 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.hubspot.tests.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">9993 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.hubspot.tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">verifyHomePageHeaderTest</span>
-                <span class="method-start">19361 ms</span>
+                <span class="method-name">login_IncorrectData</span>
+                <span class="method-start">5251 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">21305 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">22566 ms</span>
-              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.hubspot.tests.HomePageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyHomePageTitleTest</span>
-                <span class="method-start">31462 ms</span>
+                <span class="method-start">6680 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.hubspot.tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">36524 ms</span>
+                <span class="method-start">7070 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.hubspot.tests.ContactsPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">37938 ms</span>
+                <span class="method-start">7194 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.hubspot.tests.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">11279 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">createContactsTest</span>
-                <span class="method-start">62754 ms</span>
+                <span class="method-name">verifyHomePageHeaderTest</span>
+                <span class="method-start">12425 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">76780 ms</span>
+                <span class="method-start">22777 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.hubspot.tests.ContactsPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createContactsTest</span>
+                <span class="method-start">25521 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">33956 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.hubspot.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">34065 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginPageTitleTest</span>
+                <span class="method-start">37407 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">37413 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">37501 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">forgotPwdLinkTest</span>
+                <span class="method-start">41081 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">41107 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">41196 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login_CorrectData_Test</span>
+                <span class="method-start">45004 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">45384 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

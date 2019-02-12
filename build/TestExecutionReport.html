@@ -48,7 +48,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Feb 12, 2019 08:33:39 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Feb 12, 2019 09:37:05 PM</span>
 				</a>
 			</li>
 			<li>
@@ -138,10 +138,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>3</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='85.714%'><span class='strong'>6</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='25%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='14.286%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -153,10 +153,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>3</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='85.714%'><span class='strong'>6</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='25%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='14.286%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -171,17 +171,17 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>testPassword</span>
-						<span class='test-time'>Feb 12, 2019 08:33:48 AM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>login_IncorrectData</span>
+						<span class='test-time'>Feb 12, 2019 09:37:10 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 12, 2019 08:33:48 AM</span>
-	<span class='label end-time'>Feb 12, 2019 08:33:49 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+33ms</span>
+	<span class='label start-time'>Feb 12, 2019 09:37:10 PM</span>
+	<span class='label end-time'>Feb 12, 2019 09:37:11 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+362ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -199,76 +199,15 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>8:33:49 AM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
-					<div class='test-heading'>
-						<span class='test-name'>verifyHomePageHeaderTest</span>
-						<span class='test-time'>Feb 12, 2019 08:33:59 AM</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Feb 12, 2019 08:33:59 AM</span>
-	<span class='label end-time'>Feb 12, 2019 08:33:59 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+251ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>HubSpotTestSuite</span>
-				<span class='category label white-text'>HomePageTest</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>8:34:01 AM</td>
-					<td class='step-details'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //h1[text()='Sales Dashboard']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Naveen-Mac.local', ip: 'fe80:0:0:0:184c:fe11:a46c:b11c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_144'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 4567, moz:profile: /var/folders/fd/lw5s91x96f9..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1d576516-cb6c-0542-80c5-6f8657d873dc
-*** Element info: {Using=xpath, value=//h1[text()='Sales Dashboard']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
-	at com.qa.hubspot.pages.HomePage.verifyHomePageHeader(HomePage.java:36)
-	at com.qa.hubspot.tests.HomePageTest.verifyHomePageHeaderTest(HomePageTest.java:46)
+					<td class='timestamp'>9:37:12 PM</td>
+					<td class='step-details'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at com.qa.hubspot.tests.LoginTest.login_IncorrectData(LoginTest.java:54)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -279,22 +218,10 @@ Session ID: 1d576516-cb6c-0542-80c5-6f8657d873dc
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre><img data-featherlight='/Users/NaveenKhunteta/Documents/workspace/DecPOMSeries/screenshots/1549940641252.png' width='10%' src='/Users/NaveenKhunteta/Documents/workspace/DecPOMSeries/screenshots/1549940641252.png' data-src='/Users/NaveenKhunteta/Documents/workspace/DecPOMSeries/screenshots/1549940641252.png'></td>
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre><img data-featherlight='/Users/NaveenKhunteta/Documents/workspace/DecPOMSeries/screenshots/1549987632218.png' width='10%' src='/Users/NaveenKhunteta/Documents/workspace/DecPOMSeries/screenshots/1549987632218.png' data-src='/Users/NaveenKhunteta/Documents/workspace/DecPOMSeries/screenshots/1549987632218.png'></td>
 				</tr>
 			</tbody>
 		</table>
@@ -303,17 +230,17 @@ Session ID: 1d576516-cb6c-0542-80c5-6f8657d873dc
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>verifyHomePageTitleTest</span>
-						<span class='test-time'>Feb 12, 2019 08:34:11 AM</span>
+						<span class='test-time'>Feb 12, 2019 09:37:11 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 12, 2019 08:34:11 AM</span>
-	<span class='label end-time'>Feb 12, 2019 08:34:16 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+58ms</span>
+	<span class='label start-time'>Feb 12, 2019 09:37:11 PM</span>
+	<span class='label end-time'>Feb 12, 2019 09:37:16 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+596ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -333,7 +260,47 @@ Session ID: 1d576516-cb6c-0542-80c5-6f8657d873dc
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>8:34:16 AM</td>
+					<td class='timestamp'>9:37:16 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyHomePageHeaderTest</span>
+						<span class='test-time'>Feb 12, 2019 09:37:17 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 12, 2019 09:37:17 PM</span>
+	<span class='label end-time'>Feb 12, 2019 09:37:27 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+351ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>HubSpotTestSuite</span>
+				<span class='category label white-text'>HomePageTest</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:37:27 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -346,14 +313,14 @@ Session ID: 1d576516-cb6c-0542-80c5-6f8657d873dc
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
 					<div class='test-heading'>
 						<span class='test-name'>createContactsTest</span>
-						<span class='test-time'>Feb 12, 2019 08:34:42 AM</span>
+						<span class='test-time'>Feb 12, 2019 09:37:30 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 12, 2019 08:34:42 AM</span>
-	<span class='label end-time'>Feb 12, 2019 08:34:56 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 14s+23ms</span>
+	<span class='label start-time'>Feb 12, 2019 09:37:30 PM</span>
+	<span class='label end-time'>Feb 12, 2019 09:37:39 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+434ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -373,7 +340,127 @@ Session ID: 1d576516-cb6c-0542-80c5-6f8657d873dc
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>8:34:56 AM</td>
+					<td class='timestamp'>9:37:39 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>loginPageTitleTest</span>
+						<span class='test-time'>Feb 12, 2019 09:37:42 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 12, 2019 09:37:42 PM</span>
+	<span class='label end-time'>Feb 12, 2019 09:37:42 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+5ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>HubSpotTestSuite</span>
+				<span class='category label white-text'>LoginTest</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:37:42 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>forgotPwdLinkTest</span>
+						<span class='test-time'>Feb 12, 2019 09:37:46 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 12, 2019 09:37:46 PM</span>
+	<span class='label end-time'>Feb 12, 2019 09:37:46 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+25ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>HubSpotTestSuite</span>
+				<span class='category label white-text'>LoginTest</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:37:46 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>login_CorrectData_Test</span>
+						<span class='test-time'>Feb 12, 2019 09:37:50 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 12, 2019 09:37:50 PM</span>
+	<span class='label end-time'>Feb 12, 2019 09:37:50 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+379ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>HubSpotTestSuite</span>
+				<span class='category label white-text'>LoginTest</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:37:50 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -435,6 +522,71 @@ Session ID: 1d576516-cb6c-0542-80c5-6f8657d873dc
 					<div class='category-heading'>
 						<span class='category-name'>HubSpotTestSuite</span>
 						<span class='category-status right'>
+							<span class='label pass'>6</span>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 6</span>
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Feb 12, 2019 09:37:10 PM</td>
+										<td class='linked' test-id='1'>login_IncorrectData</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Feb 12, 2019 09:37:11 PM</td>
+										<td class='linked' test-id='2'>verifyHomePageTitleTest</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Feb 12, 2019 09:37:17 PM</td>
+										<td class='linked' test-id='3'>verifyHomePageHeaderTest</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Feb 12, 2019 09:37:30 PM</td>
+										<td class='linked' test-id='4'>createContactsTest</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Feb 12, 2019 09:37:42 PM</td>
+										<td class='linked' test-id='5'>loginPageTitleTest</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Feb 12, 2019 09:37:46 PM</td>
+										<td class='linked' test-id='6'>forgotPwdLinkTest</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Feb 12, 2019 09:37:50 PM</td>
+										<td class='linked' test-id='7'>login_CorrectData_Test</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>LoginTest</span>
+						<span class='category-status right'>
 							<span class='label pass'>3</span>
 							<span class='label fail'>1</span>
 						</span>
@@ -457,57 +609,23 @@ Session ID: 1d576516-cb6c-0542-80c5-6f8657d873dc
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 12, 2019 08:33:48 AM</td>
-										<td class='linked' test-id='1'>testPassword</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Feb 12, 2019 08:33:59 AM</td>
-										<td class='linked' test-id='2'>verifyHomePageHeaderTest</td>
+										<td>Feb 12, 2019 09:37:10 PM</td>
+										<td class='linked' test-id='1'>login_IncorrectData</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Feb 12, 2019 08:34:11 AM</td>
-										<td class='linked' test-id='3'>verifyHomePageTitleTest</td>
+										<td>Feb 12, 2019 09:37:42 PM</td>
+										<td class='linked' test-id='5'>loginPageTitleTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Feb 12, 2019 08:34:42 AM</td>
-										<td class='linked' test-id='4'>createContactsTest</td>
+										<td>Feb 12, 2019 09:37:46 PM</td>
+										<td class='linked' test-id='6'>forgotPwdLinkTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>LoginTest</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
 									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Feb 12, 2019 08:33:48 AM</td>
-										<td class='linked' test-id='1'>testPassword</td>
+										<td>Feb 12, 2019 09:37:50 PM</td>
+										<td class='linked' test-id='7'>login_CorrectData_Test</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -519,14 +637,13 @@ Session ID: 1d576516-cb6c-0542-80c5-6f8657d873dc
 					<div class='category-heading'>
 						<span class='category-name'>HomePageTest</span>
 						<span class='category-status right'>
-							<span class='label pass'>1</span>
-							<span class='label fail'>1</span>
+							<span class='label pass'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							<span class='label green accent-4 white-text'>Passed: 2</span>
+							
 							
 						</div>
 					
@@ -541,13 +658,13 @@ Session ID: 1d576516-cb6c-0542-80c5-6f8657d873dc
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 12, 2019 08:33:59 AM</td>
-										<td class='linked' test-id='2'>verifyHomePageHeaderTest</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td>Feb 12, 2019 09:37:11 PM</td>
+										<td class='linked' test-id='2'>verifyHomePageTitleTest</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Feb 12, 2019 08:34:11 AM</td>
-										<td class='linked' test-id='3'>verifyHomePageTitleTest</td>
+										<td>Feb 12, 2019 09:37:17 PM</td>
+										<td class='linked' test-id='3'>verifyHomePageHeaderTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -580,7 +697,7 @@ Session ID: 1d576516-cb6c-0542-80c5-6f8657d873dc
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 12, 2019 08:34:42 AM</td>
+										<td>Feb 12, 2019 09:37:30 PM</td>
 										<td class='linked' test-id='4'>createContactsTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -628,7 +745,7 @@ Session ID: 1d576516-cb6c-0542-80c5-6f8657d873dc
 
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
-                                <span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
+                                <span class='exception-name'>java.lang.AssertionError</span>
                                 <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
                             </div>
                             <div class='exception-content hide'>
@@ -643,35 +760,14 @@ Session ID: 1d576516-cb6c-0542-80c5-6f8657d873dc
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Feb 12, 2019 08:33:59 AM</td>
-                                                        <td class='linked' test-id='2'>verifyHomePageHeaderTest</td>
-                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //h1[text()='Sales Dashboard']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Naveen-Mac.local', ip: 'fe80:0:0:0:184c:fe11:a46c:b11c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_144'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 4567, moz:profile: /var/folders/fd/lw5s91x96f9..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1d576516-cb6c-0542-80c5-6f8657d873dc
-*** Element info: {Using=xpath, value=//h1[text()='Sales Dashboard']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
-	at com.qa.hubspot.pages.HomePage.verifyHomePageHeader(HomePage.java:36)
-	at com.qa.hubspot.tests.HomePageTest.verifyHomePageHeaderTest(HomePageTest.java:46)
+                                                        <td>Feb 12, 2019 09:37:10 PM</td>
+                                                        <td class='linked' test-id='1'>login_IncorrectData</td>
+                                                        <td><pre><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at com.qa.hubspot.tests.LoginTest.login_IncorrectData(LoginTest.java:54)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -682,21 +778,9 @@ Session ID: 1d576516-cb6c-0542-80c5-6f8657d873dc
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
 </pre></pre></td>
                                                     </tr>
                                         </tbody>
@@ -723,31 +807,31 @@ Session ID: 1d576516-cb6c-0542-80c5-6f8657d873dc
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>7</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>7</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Feb 12, 2019 08:33:39 AM</div>
+					<div class='panel-lead'>Feb 12, 2019 09:37:05 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Feb 12, 2019 08:34:58 AM</div>
+			 		<div class='panel-lead'>Feb 12, 2019 09:37:50 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 1m 18s+364ms</div>
+					<div class='panel-lead'>0h 0m 45s+929ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -764,6 +848,15 @@ Session ID: 1d576516-cb6c-0542-80c5-6f8657d873dc
 						</tr>
 						<tr>
 							<td>HubSpotTestSuite</td>
+							<td>6</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									85.714%
+							</td>
+						</tr>
+						<tr>
+							<td>LoginTest</td>
 							<td>3</td>
 							<td>1</td>
 							<td>0</td>
@@ -772,21 +865,12 @@ Session ID: 1d576516-cb6c-0542-80c5-6f8657d873dc
 							</td>
 						</tr>
 						<tr>
-							<td>LoginTest</td>
-							<td>1</td>
+							<td>HomePageTest</td>
+							<td>2</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
 									100%
-							</td>
-						</tr>
-						<tr>
-							<td>HomePageTest</td>
-							<td>1</td>
-							<td>1</td>
-							<td>0</td>
-							<td>
-									50%
 							</td>
 						</tr>
 						<tr>
@@ -811,7 +895,7 @@ Session ID: 1d576516-cb6c-0542-80c5-6f8657d873dc
 
 		<script>
 			var statusGroup = {
-				passParent: 3,
+				passParent: 6,
 				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
@@ -819,7 +903,7 @@ Session ID: 1d576516-cb6c-0542-80c5-6f8657d873dc
 				skipParent: 0,
 				exceptionsParent: 1,
 				
-				passChild: 3,
+				passChild: 6,
 				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,

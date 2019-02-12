@@ -22,7 +22,7 @@ public class BasePage {
 	//public WebDriver driver;
 	public Properties prop;
 	//WebDriver driver;
-	public static ThreadLocal<WebDriver> tldriver = new ThreadLocal<>();
+	public static ThreadLocal<WebDriver> tldriver = new ThreadLocal<WebDriver>();
 
 
 	public WebDriver init_driver(String browserName) {

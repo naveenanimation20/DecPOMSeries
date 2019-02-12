@@ -4,15 +4,8 @@
   <listeners>
     <listener class-name="com.qa.hubspot.listeners.ExtentReportListener"/>
   </listeners>
-  <test thread-count="5" name="Driver Test(failed)">
+  <test thread-count="5" name="hub spot regression Test(failed)">
     <classes>
-      <class name="com.qa.hubspot.tests.ContactsPageTest">
-        <methods>
-          <include name="createContactsTest"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.qa.hubspot.tests.ContactsPageTest -->
       <class name="com.qa.hubspot.tests.HomePageTest">
         <methods>
           <include name="tearDown"/>
@@ -21,5 +14,5 @@
         </methods>
       </class> <!-- com.qa.hubspot.tests.HomePageTest -->
     </classes>
-  </test> <!-- Driver Test(failed) -->
+  </test> <!-- hub spot regression Test(failed) -->
 </suite> <!-- Failed suite [Hub Spot Test Suite] -->

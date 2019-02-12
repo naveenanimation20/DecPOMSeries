@@ -21,6 +21,7 @@ public class BasePage {
 
 	//public WebDriver driver;
 	public Properties prop;
+	//WebDriver driver;
 	public static ThreadLocal<WebDriver> tldriver = new ThreadLocal<>();
 
 
@@ -82,7 +83,6 @@ public class BasePage {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
 		return prop;
 	}
 	

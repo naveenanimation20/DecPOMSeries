@@ -75,8 +75,7 @@ public class BasePage {
 	public Properties init_properties() {
 		prop = new Properties();
 		try {
-			FileInputStream ip = new FileInputStream("/Users/NaveenKhunteta/Documents/workspace/DecPOMSeries/"
-					+ "src/main/java/com/qa/hubspot/config/config.properties");
+			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/com/qa/hubspot/config/config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

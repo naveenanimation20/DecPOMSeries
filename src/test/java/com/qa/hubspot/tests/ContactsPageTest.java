@@ -5,12 +5,14 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.qa.hubspot.base.BasePage;
 import com.qa.hubspot.pages.ContactsPage;
 import com.qa.hubspot.pages.HomePage;
 import com.qa.hubspot.pages.LoginPage;
+import com.qa.hubspot.util.TestUtil;
 
 public class ContactsPageTest {
 	
@@ -34,11 +36,16 @@ public class ContactsPageTest {
 		contactsPage = homePage.gotoContactsPage();
 	}
 	
-	@Test
-	public void createContactsTest(){
-		contactsPage.createNewContact("naveen@gmail.com", "Naveen", "K", "SDET Manager");
+	@DataProvider(name = "getContactsData")
+	public Object[][] getContactsTestData(){
+		Object contactsData[][] = TestUtil.getTestData("contacts");
+		return contactsData;
 	}
 	
+	@Test(dataProvider = "getContactsData")
+	public void createContactsTest(String email, String firstName, String lastName, String jobTitle){
+		contactsPage.createNewContact(email, firstName, lastName, jobTitle);
+	}
 	
 	
 	@AfterMethod(alwaysRun=true)

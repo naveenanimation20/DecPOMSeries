@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Hub Spot Test Suite]">
-  <listeners>
-    <listener class-name="com.qa.hubspot.listeners.ExtentReportListener"/>
-  </listeners>
-  <test thread-count="5" name="hub spot regression Test(failed)" parallel="methods">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.hubspot.tests.LoginTest">
+      <class name="com.qa.hubspot.tests.ContactsPageTest">
         <methods>
-          <include name="setUp"/>
+          <include name="createContactsTest"/>
           <include name="tearDown"/>
-          <include name="login_IncorrectData"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.qa.hubspot.tests.LoginTest -->
+      </class> <!-- com.qa.hubspot.tests.ContactsPageTest -->
     </classes>
-  </test> <!-- hub spot regression Test(failed) -->
-</suite> <!-- Failed suite [Hub Spot Test Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

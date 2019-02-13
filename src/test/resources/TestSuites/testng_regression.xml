@@ -5,11 +5,11 @@
 		<listener class-name="com.qa.hubspot.listeners.ExtentReportListener" />
 	</listeners>
 
-	<test name="hub spot regression Test" thread-count="3" parallel="methods">
+	<test name="hub spot regression Test" >
 		<classes>
-			<class name="com.qa.hubspot.tests.LoginTest" />
+<!-- 			<class name="com.qa.hubspot.tests.LoginTest" />
 			<class name="com.qa.hubspot.tests.HomePageTest" />
-			<class name="com.qa.hubspot.tests.ContactsPageTest" />
+ -->			<class name="com.qa.hubspot.tests.ContactsPageTest" />
 		</classes>
 	</test>
 </suite>

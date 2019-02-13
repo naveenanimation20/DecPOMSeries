@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Hub Spot Test Suite]" parallel="methods">
+<suite thread-count="4" name="Failed suite [Hub Spot Test Suite]" parallel="methods" data-provider-thread-count="3">
   <listeners>
     <listener class-name="com.qa.hubspot.listeners.ExtentReportListener"/>
   </listeners>
-  <test thread-count="5" name="hub spot regression Test(failed)" parallel="methods">
+  <test thread-count="4" name="hub spot regression Test(failed)" parallel="methods">
     <classes>
+      <class name="com.qa.hubspot.tests.ContactsPageTest">
+        <methods>
+          <include name="createContactsTest" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.hubspot.tests.ContactsPageTest -->
       <class name="com.qa.hubspot.tests.LoginTest">
         <methods>
           <include name="setUp"/>

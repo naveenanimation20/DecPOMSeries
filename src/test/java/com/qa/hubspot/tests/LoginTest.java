@@ -15,7 +15,7 @@ import com.qa.hubspot.pages.LoginPage;
 public class LoginTest {
 
 	public BasePage basePage;
-	public WebDriver driver;
+	//public WebDriver driver;
 	public Properties prop;
 	public LoginPage loginPage;
 
@@ -24,7 +24,8 @@ public class LoginTest {
 		basePage = new BasePage();
 		prop = basePage.init_properties();
 		String browser = prop.getProperty("browser");
-		driver = basePage.init_driver(browser);
+		basePage.init_driver(browser);
+		WebDriver driver = BasePage.getDriver();
 		driver.get(prop.getProperty("url"));
 		loginPage = new LoginPage();
 	}
@@ -57,7 +58,7 @@ public class LoginTest {
 
 	@AfterMethod(alwaysRun = true)
 	public void tearDown() {
-		driver.quit();
+		BasePage.getDriver().quit();
 	}
 
 }

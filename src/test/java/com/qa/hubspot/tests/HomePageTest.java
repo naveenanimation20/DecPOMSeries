@@ -17,7 +17,7 @@ public class HomePageTest {
 	
 	
 	public BasePage basePage;
-	public WebDriver driver;
+	//public WebDriver driver;
 	public Properties prop;
 	public LoginPage loginPage;
 	public HomePage homePage;
@@ -28,8 +28,8 @@ public class HomePageTest {
 		basePage = new BasePage();
 		prop = basePage.init_properties();
 		String browser = prop.getProperty("browser");
-		driver = basePage.init_driver(browser);
-		driver.get(prop.getProperty("url"));
+		basePage.init_driver(browser);
+		BasePage.getDriver().get(prop.getProperty("url"));
 		loginPage = new LoginPage();
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
@@ -50,7 +50,7 @@ public class HomePageTest {
 	
 	@AfterMethod(alwaysRun=true)
 	public void tearDown(){
-		driver.quit();
+		BasePage.getDriver().quit();
 	}
 	
 	

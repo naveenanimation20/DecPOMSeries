@@ -22,28 +22,29 @@ public class HomePage extends BasePage{
 	@FindBy(id = "nav-secondary-contacts")
 	WebElement contactsLink;
 	
-	public HomePage(WebDriver driver){
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
+	public HomePage(){
+		PageFactory.initElements(getDriver(), this);
 	}
 	
 	public String getHomePageTitle(){
-		WebDriverWait wait = new WebDriverWait(driver, 20);
-		wait.until(ExpectedConditions.titleContains(Constants.HOME_PAGE_HEADER));
-		return driver.getTitle();
+		WebDriverWait wait = new WebDriverWait(getDriver(), 20);
+		wait.until(ExpectedConditions.titleContains(Constants.HOME_PAGE_TITLE));
+		return getDriver().getTitle();
 	}
 	
 	public boolean verifyHomePageHeader(){
+		WebDriverWait wait = new WebDriverWait(getDriver(), 20);
+		wait.until(ExpectedConditions.visibilityOf(homePageHeader));
 		return homePageHeader.isDisplayed();
 	}
 	
 	public ContactsPage gotoContactsPage(){
-		WebDriverWait wait = new WebDriverWait(driver, 20);
+		WebDriverWait wait = new WebDriverWait(getDriver(), 20);
 		wait.until(ExpectedConditions.visibilityOf(contactsTab));
 		contactsTab.click();
 		TestUtil.shortWait();
 		contactsLink.click();
-		return new ContactsPage(driver);
+		return new ContactsPage();
 	}
 	
 	

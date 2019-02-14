@@ -31,13 +31,12 @@ public class ContactsPage extends BasePage{
 	
 	
 	
-	public ContactsPage(WebDriver driver){
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
+	public ContactsPage(){
+		PageFactory.initElements(getDriver(), this);
 	}
 	
 	public void createNewContact(String emailVal, String firstname, String lastname, String jobtitle ){
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(getDriver(), 10);
 		
 		wait.until(ExpectedConditions.elementToBeClickable(createContactBtn));
 		createContactBtn.click();

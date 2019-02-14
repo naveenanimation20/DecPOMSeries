@@ -17,7 +17,7 @@ public class HomePageTest {
 	
 	
 	public BasePage basePage;
-	public WebDriver driver;
+	//public WebDriver driver;
 	public Properties prop;
 	public LoginPage loginPage;
 	public HomePage homePage;
@@ -28,9 +28,9 @@ public class HomePageTest {
 		basePage = new BasePage();
 		prop = basePage.init_properties();
 		String browser = prop.getProperty("browser");
-		driver = basePage.init_driver(browser);
-		driver.get(prop.getProperty("url"));
-		loginPage = new LoginPage(driver);
+		basePage.init_driver(browser);
+		BasePage.getDriver().get(prop.getProperty("url"));
+		loginPage = new LoginPage();
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
@@ -38,7 +38,7 @@ public class HomePageTest {
 	public void verifyHomePageTitleTest(){
 		String title = homePage.getHomePageTitle();
 		System.out.println("home page title is: "+ title);
-		Assert.assertEquals(title, Constants.HOME_PAGE_HEADER);
+		Assert.assertEquals(title, Constants.HOME_PAGE_TITLE);
 	}
 	
 	@Test
@@ -48,9 +48,9 @@ public class HomePageTest {
 	
 	
 	
-	@AfterMethod
+	@AfterMethod(alwaysRun=true)
 	public void tearDown(){
-		driver.quit();
+		BasePage.getDriver().quit();
 	}
 	
 	
